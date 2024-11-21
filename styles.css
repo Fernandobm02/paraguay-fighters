@@ -1,0 +1,148 @@
+/* Estilo general del header */
+.header-rojo {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre el logo y el menú */
+    align-items: center;            /* Centrar verticalmente los elementos */
+    background: linear-gradient(to bottom, #d30404, #950808); /* Fondo degradado */
+    padding: 15px 30px;             /* Espaciado interno */
+    color: white;                   /* Color del texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Logo y título */
+.logo {
+    display: flex;
+    align-items: center; /* Alinea el logo y el título verticalmente */
+    gap: 10px;           /* Espaciado entre el logo y el título */
+}
+
+.logo img {
+    width: 50px;         /* Tamaño del logo */
+    height: 50px;        /* Tamaño del logo */
+    border-radius: 50%;  /* Forma circular */
+}
+
+/* Menú */
+nav ul {
+    display: flex;
+    gap: 20px;           /* Espaciado entre los elementos del menú */
+    list-style: none;    /* Quitar viñetas */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;             /* Color del texto */
+    text-decoration: none;    /* Sin subrayado */
+    font-weight: bold;        /* Texto en negrita */
+    transition: color 0.3s;   /* Efecto al pasar el cursor */
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* Cambiar a un tono rojo brillante al pasar el cursor */
+}
+
+/* Estilo para el article */
+article {
+    background-color: #f9f9f9; /* Fondo claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-bottom: 20px; /* Separación inferior */
+    font-family: Arial, sans-serif; /* Tipografía */
+}
+
+/* Estilo para las imágenes del article */
+article img {
+    width: 50%; /* Que ocupe todo el ancho disponible */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 10px; /* Espaciado superior */
+    align-self: center;
+    align-content: center;
+}
+
+/* Estilo para el aside */
+aside {
+    background-color: #e8f5e9; /* Fondo verde claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para el título del aside */
+aside h1 {
+    color: #2e7d32; /* Verde oscuro */
+    font-size: 1.5em; /* Tamaño de fuente */
+    margin-bottom: 10px;
+}
+
+/* Estilo para las imágenes del aside */
+aside img {
+    width: 40%; /* Que ocupe todo el ancho */
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Contenedor principal para article y aside */
+.container {
+    display: flex;              /* Flexbox para alineación en fila */
+    justify-content: space-between; /* Espaciado entre los elementos */
+    align-items: flex-start;    /* Alineación vertical */
+    gap: 20px;                  /* Espaciado entre article y aside */
+    padding: 20px;              /* Margen interno */
+}
+
+/* Estilo adicional para el article (ancho adaptativo) */
+article {
+    flex: 2;                    /* Ocupa 2/3 del espacio disponible */
+}
+
+/* Estilo adicional para el aside (ancho más reducido) */
+aside {
+    flex: 1;                    /* Ocupa 1/3 del espacio disponible */
+}
+
+/* Estilo del footer */
+.footer-negro {
+    background: linear-gradient(to bottom, #000, #333); /* Fondo negro degradado */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrar texto e íconos */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Redes sociales */
+.footer-negro .redes-sociales h3 {
+    margin-bottom: 10px;
+}
+
+.footer-negro .redes-sociales a {
+    margin: 0 10px; /* Espaciado entre los íconos */
+    display: inline-block;
+}
+
+.footer-negro .redes-sociales img {
+    width: 30px; /* Tamaño de los íconos */
+    height: 30px;
+    transition: transform 0.3s; /* Efecto al pasar el cursor */
+}
+
+.footer-negro .redes-sociales img:hover {
+    transform: scale(1.2); /* Aumentar tamaño al pasar el cursor */
+}
+
+/* Información adicional */
+.footer-negro .informacion-extra p {
+    margin: 5px 0; /* Espaciado entre líneas */
+}
+
+.footer-negro .informacion-extra a {
+    color: #ff6347; /* Color de los enlaces */
+    text-decoration: none;
+}
+
+.footer-negro .informacion-extra a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
